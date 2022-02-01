@@ -1,0 +1,18 @@
+<div style="border:2px solid black; padding:10px; margin:20px; width:fit-content;">
+    <input type="text" (keyup)="handleChange($event)">
+    <p>{{textInput}}</p>
+</div>
+
+
+
+<div style="border:2px solid black; padding:10px; margin:20px; width:fit-content;">
+    <input type="text" #textInput2 (change)="handleChange2()">
+    <p>{{textInput2.value}}</p>
+</div>
+
+
+
+<div style="border:2px solid black; padding:10px; margin:20px; width:fit-content;">
+    <input type="text" #textInput3 (keyup.enter)="handleChange3(textInput3.value)">
+    <p>{{textInput3.value}}</p>
+</div>
